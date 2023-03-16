@@ -3,6 +3,9 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 	Exit
 }
 winget upgrade -h --all --accept-source-agreements --force
+Remove-Item $env:USERPROFILE\AppData\Local\Temp\* -ErrorAction SilentlyContinue
+Remove-Item C:\Windows\Temp\* -Force -ErrorAction SilentlyContinue
+defrag /C /B /G /L /O
 Install-Module -Name PSWindowsUpdate -Force
 Get-WindowsUpdate; Install-WindowsUpdate -AcceptAll
 cls; (Invoke-WebRequest "https://raw.githubusercontent.com/kiedtl/winfetch/master/winfetch.ps1" -UseBasicParsing).Content.Remove(0,1) | Invoke-Expression
