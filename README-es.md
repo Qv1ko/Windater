@@ -6,8 +6,8 @@ Script para actualizar las aplicaciones y el sistema operativo de Windows.
 ![PowerShell 7+](https://img.shields.io/badge/PowerShell-7+-131E2A?style=flat-square&logo=powershell&logoColor=white)
 
 ### Idioma del README
-* 🇪🇸 **Español**
-* 🇺🇸 [Inglés](./README.md)
+- 🇪🇸 **Español**
+- 🇺🇸 [Inglés](./README.md)
 
 ## Instalación
 1. Clona el repositorio en su sistema
